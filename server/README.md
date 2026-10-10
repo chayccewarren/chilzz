@@ -1,0 +1,2 @@
+# Chilzz Proxy server
+Allowlist-only fetcher. Set `ALLOWED_HOSTS` to sites you are authorized to access. Blocks private, loopback and link-local IPs at connection time (DNS-rebinding safe), re-validates every redirect (max 4), 8s timeout, 2 MB cap, 60 req/min/IP, forwards no cookies or auth headers, no request logging. Responses are HTML/text only and rendered client-side in a fully sandboxed iframe.
