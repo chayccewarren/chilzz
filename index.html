@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self' data: blob:; frame-src https: http:; connect-src 'self' http://localhost:* https:; script-src 'self'">
+<title>Chilzz</title><link rel="stylesheet" href="css/global.css"></head><body>
+<div id="boot" class="screen"><div class="logo">C</div><p>Starting Chilzz</p><div class="bar"><i></i></div><small>Click to skip</small></div>
+<div id="login" class="screen" hidden><div class="clock" id="lclock"></div><div class="avatar" id="lav">P</div><h2 id="lname"></h2><p>Welcome back</p>
+<input id="pin" type="password" inputmode="numeric" maxlength="8" placeholder="PIN (local only, optional)" aria-label="Local PIN"><div><button id="signin">Sign in</button> <button id="guest" class="ghost">Guest</button></div></div>
+<div id="desktop" hidden><div id="icons"></div><div id="windows"></div>
+<div id="start" hidden><input id="sq" placeholder="Search apps and games (Ctrl+K)" aria-label="Search"><div id="sres"></div><footer><span id="uname"></span><button id="restart" class="ghost">Restart</button></footer></div>
+<div id="taskbar"><button id="startbtn" aria-label="Start">&#9707;</button><div id="tasks"></div><span id="tray"></span></div></div>
+<script type="module" src="js/app.js"></script></body></html>
