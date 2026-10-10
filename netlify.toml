@@ -1,0 +1,16 @@
+# Netlify hosts the desktop; the proxy server runs on Render (see README).
+# Replace YOUR-APP with your Render service name. This makes /api and /health same-origin, so no CORS or Settings change is needed.
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://YOUR-APP.onrender.com/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/health"
+  to = "https://YOUR-APP.onrender.com/health"
+  status = 200
+  force = true
